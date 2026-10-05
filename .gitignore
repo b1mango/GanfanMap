@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# 项目工作文档统一归档于 Agent-settings，不入本仓库
+项目设计.md
+项目进度清单.md
