@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>干饭地图指北图标方案</title>
+    <style>
+      :root {
+        color: #1d1914;
+        background: #f7efe3;
+        font-family: "Source Han Sans SC", "Microsoft YaHei", system-ui, sans-serif;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        padding: 32px;
+        background:
+          linear-gradient(rgba(29, 25, 20, 0.025) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(29, 25, 20, 0.018) 1px, transparent 1px),
+          #f7efe3;
+        background-size: 28px 28px;
+      }
+
+      h1 {
+        font-family: "Noto Serif SC", "Songti SC", serif;
+        font-size: 32px;
+        margin: 0 0 22px;
+      }
+
+      .grid {
+        display: grid;
+        gap: 18px;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        max-width: 1080px;
+      }
+
+      .card {
+        background: rgba(255, 250, 241, 0.82);
+        border: 1px solid #dfd1bd;
+        border-radius: 8px;
+        display: grid;
+        gap: 12px;
+        padding: 18px;
+      }
+
+      .icon-row {
+        align-items: end;
+        display: flex;
+        gap: 16px;
+      }
+
+      img.large {
+        height: 96px;
+        width: 96px;
+      }
+
+      img.small {
+        height: 32px;
+        width: 32px;
+      }
+
+      strong {
+        display: block;
+        font-size: 16px;
+      }
+
+      code {
+        color: #776e63;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>干饭地图指北图标方案</h1>
+    <main class="grid">
+      <section class="card">
+        <div class="icon-row">
+          <img class="large" src="./fan-compass.svg" alt="饭字罗盘" />
+          <img class="small" src="./fan-compass.svg" alt="" />
+        </div>
+        <strong>方案 A：饭字罗盘</strong>
+        <code>fan-compass.svg</code>
+      </section>
+      <section class="card">
+        <div class="icon-row">
+          <img class="large" src="./pin-chopsticks.svg" alt="地图图钉筷子" />
+          <img class="small" src="./pin-chopsticks.svg" alt="" />
+        </div>
+        <strong>方案 B：地图图钉 + 筷子</strong>
+        <code>pin-chopsticks.svg</code>
+      </section>
+      <section class="card">
+        <div class="icon-row">
+          <img class="large" src="./plate-compass.svg" alt="餐盘指南针" />
+          <img class="small" src="./plate-compass.svg" alt="" />
+        </div>
+        <strong>方案 C：餐盘指南针</strong>
+        <code>plate-compass.svg</code>
+      </section>
+      <section class="card">
+        <div class="icon-row">
+          <img class="large" src="./folded-map-fan.svg" alt="折叠地图饭标" />
+          <img class="small" src="./folded-map-fan.svg" alt="" />
+        </div>
+        <strong>方案 D：折叠地图饭标</strong>
+        <code>folded-map-fan.svg</code>
+      </section>
+    </main>
+  </body>
+</html>

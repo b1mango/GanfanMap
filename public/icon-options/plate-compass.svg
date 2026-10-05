@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 64 64" role="img" aria-label="餐盘指南针图标">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="72%">
+      <stop offset="0" stop-color="#dfe3cf"/>
+      <stop offset="1" stop-color="#4c6244"/>
+    </radialGradient>
+    <linearGradient id="plate" x1="15" y1="11" x2="48" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fffaf1"/>
+      <stop offset=".62" stop-color="#f7efe3"/>
+      <stop offset="1" stop-color="#dfd1bd"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="4" stdDeviation="2.8" flood-color="#1d1914" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <path d="M8 11c11 6 22-4 48 4M6 52c17-7 31 5 52-4" fill="none" stroke="#fffaf1" stroke-linecap="round" stroke-opacity=".16" stroke-width="2"/>
+  <circle cx="32" cy="32" r="23.8" fill="url(#plate)" filter="url(#shadow)"/>
+  <circle cx="32" cy="32" r="18.1" fill="none" stroke="#9c7824" stroke-opacity=".8" stroke-width="1.8"/>
+  <circle cx="32" cy="32" r="13.4" fill="#fffaf1" stroke="#dfd1bd" stroke-width="1"/>
+  <path d="M32 12.5v5.2M32 46.3v5.2M12.5 32h5.2M46.3 32h5.2" stroke="#1d1914" stroke-linecap="round" stroke-opacity=".55" stroke-width="2"/>
+  <path d="M22.2 16.8l1.8 3.4M41.8 47.2l-1.8-3.4M47.2 22.2l-3.4 1.8M16.8 41.8l3.4-1.8" stroke="#9c7824" stroke-linecap="round" stroke-opacity=".68" stroke-width="1.4"/>
+  <path d="M32 9.3l5.3 24.2L32 38.8l-5.3-5.3L32 9.3z" fill="#c94f38"/>
+  <path d="M32 54.7l-4.5-20.4L32 29.8l4.5 4.5L32 54.7z" fill="#1d1914"/>
+  <circle cx="32" cy="32" r="4.7" fill="#fffaf1" stroke="#9c7824" stroke-width="1.5"/>
+  <circle cx="32" cy="32" r="1.8" fill="#c94f38"/>
+  <path d="M50.4 18.5c.8 3.1-.5 6.1-3 8.3" fill="none" stroke="#fffaf1" stroke-linecap="round" stroke-opacity=".5" stroke-width="2"/>
+</svg>

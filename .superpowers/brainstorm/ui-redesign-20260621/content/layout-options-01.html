@@ -1,0 +1,79 @@
+<h2>新版地图优先布局方向</h2>
+<p class="subtitle">目标：高德地图占满页面，删除冗余状态文字，搜索框居中置顶，筛选与店铺详情按需展开。</p>
+
+<div class="cards">
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="height:310px;border-radius:14px;overflow:hidden;background:linear-gradient(135deg,#d8e3cd,#b9d0b2);position:relative;border:1px solid #d6c9b5">
+        <div style="position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(255,255,255,.22) 1px,transparent 1px),linear-gradient(0deg,rgba(255,255,255,.22) 1px,transparent 1px);background-size:42px 42px"></div>
+        <div style="position:absolute;top:18px;left:50%;transform:translateX(-50%);width:min(520px,70%);height:48px;border-radius:999px;background:rgba(255,250,240,.94);box-shadow:0 16px 40px rgba(30,24,16,.18);display:flex;align-items:center;gap:12px;padding:0 18px;font-weight:600">🔍 搜索店名、地址、菜系...</div>
+        <div style="position:absolute;left:18px;top:22px;width:42px;height:42px;border-radius:12px;background:#1d1915;color:#fffaf0;display:grid;place-items:center;font-weight:700">饭</div>
+        <div style="position:absolute;right:18px;top:22px;display:flex;gap:10px">
+          <div style="width:42px;height:42px;border-radius:12px;background:rgba(255,250,240,.94);display:grid;place-items:center">☰</div>
+          <div style="width:42px;height:42px;border-radius:12px;background:#1d1915;color:#fffaf0;display:grid;place-items:center">＋</div>
+        </div>
+        <div style="position:absolute;left:48%;top:46%;width:32px;height:32px;border-radius:50% 50% 50% 8px;background:#c84c36;transform:rotate(-45deg);border:3px solid #fffaf0"></div>
+        <div style="position:absolute;right:24px;bottom:24px;width:270px;border-radius:16px;background:rgba(255,250,240,.94);box-shadow:0 20px 50px rgba(30,24,16,.18);padding:18px">
+          <div style="font-family:Georgia,serif;font-size:28px;font-weight:700">雾社火锅</div>
+          <div style="margin-top:8px;color:#756b60">火锅 · ¥216 · 8.2</div>
+          <div style="margin-top:14px;height:7px;background:#e5dac9;border-radius:99px"><div style="width:82%;height:100%;background:#317a2f;border-radius:99px"></div></div>
+        </div>
+        <div style="position:absolute;left:24px;bottom:24px;width:220px;border-radius:16px;background:rgba(255,250,240,.94);box-shadow:0 20px 50px rgba(30,24,16,.14);padding:14px">
+          <b>筛选</b>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px"><span>已探店</span><span>火锅</span><span>¥0-500</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A. 地图指挥台</h3>
+      <p>推荐方向。地图全屏常驻，搜索居中，品牌/新增/筛选是悬浮工具；筛选和详情是抽屉或浮层，默认不占版面。</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="height:310px;border-radius:14px;overflow:hidden;background:linear-gradient(135deg,#d8e3cd,#b9d0b2);position:relative;border:1px solid #d6c9b5">
+        <div style="position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(255,255,255,.22) 1px,transparent 1px),linear-gradient(0deg,rgba(255,255,255,.22) 1px,transparent 1px);background-size:42px 42px"></div>
+        <div style="position:absolute;top:18px;left:50%;transform:translateX(-50%);width:480px;height:48px;border-radius:999px;background:rgba(255,250,240,.94);box-shadow:0 16px 40px rgba(30,24,16,.16);display:flex;align-items:center;padding:0 18px;font-weight:600">🔍 搜索店铺或地点</div>
+        <div style="position:absolute;left:18px;top:84px;bottom:18px;width:72px;border-radius:18px;background:rgba(255,250,240,.86);box-shadow:0 16px 44px rgba(30,24,16,.12);display:grid;gap:12px;align-content:start;padding:14px">
+          <div style="height:42px;border-radius:12px;background:#1d1915;color:#fffaf0;display:grid;place-items:center">饭</div>
+          <div style="height:42px;border-radius:12px;background:#fffaf0;display:grid;place-items:center">◎</div>
+          <div style="height:42px;border-radius:12px;background:#fffaf0;display:grid;place-items:center">⚙</div>
+        </div>
+        <div style="position:absolute;right:18px;top:84px;bottom:18px;width:300px;border-radius:18px;background:rgba(255,250,240,.94);box-shadow:0 18px 54px rgba(30,24,16,.16);padding:18px">
+          <div style="font-family:Georgia,serif;font-size:28px;font-weight:700">雾社火锅</div>
+          <div style="margin-top:10px;color:#756b60">上海市徐汇区衡山路 188 号</div>
+          <div style="margin-top:18px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px"><span>火锅</span><span>¥216</span><span>8.2</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B. 轻侧栏工作台</h3>
+      <p>地图仍最大化，但左侧保留窄工具栏，右侧详情可常驻或折叠。更像专业工具，信息效率高。</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="height:310px;border-radius:14px;overflow:hidden;background:linear-gradient(135deg,#d8e3cd,#b9d0b2);position:relative;border:1px solid #d6c9b5">
+        <div style="position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(255,255,255,.22) 1px,transparent 1px),linear-gradient(0deg,rgba(255,255,255,.22) 1px,transparent 1px);background-size:42px 42px"></div>
+        <div style="position:absolute;top:18px;left:50%;transform:translateX(-50%);width:min(520px,70%);height:48px;border-radius:999px;background:rgba(255,250,240,.94);box-shadow:0 16px 40px rgba(30,24,16,.16);display:flex;align-items:center;padding:0 18px;font-weight:600">🔍 今天想去哪吃？</div>
+        <div style="position:absolute;left:42%;top:38%;width:32px;height:32px;border-radius:50% 50% 50% 8px;background:#c84c36;transform:rotate(-45deg);border:3px solid #fffaf0"></div>
+        <div style="position:absolute;left:18px;right:18px;bottom:18px;height:112px;border-radius:22px;background:rgba(255,250,240,.96);box-shadow:0 -16px 50px rgba(30,24,16,.16);padding:16px;display:flex;gap:12px">
+          <div style="width:220px;border:1px solid #dccfbd;border-radius:14px;padding:12px"><b>雾社火锅</b><br><span style="color:#756b60">8.2 · ¥216</span></div>
+          <div style="width:220px;border:1px solid #dccfbd;border-radius:14px;padding:12px"><b>炭火研究所</b><br><span style="color:#756b60">想去 · ¥168</span></div>
+          <div style="width:220px;border:1px solid #dccfbd;border-radius:14px;padding:12px"><b>荔枝巷茶室</b><br><span style="color:#756b60">8.4 · ¥92</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C. 底部卡片地图</h3>
+      <p>更接近移动地图应用：地图全屏，底部卡片流承载结果。桌面上很沉浸，但高级管理筛选会弱一些。</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>我建议选 A：地图指挥台</h3>
+  <p>它最符合你说的“地图展示部分就是主体”。默认页面几乎全是高德地图，只保留必要的中心搜索与少量悬浮工具；筛选、列表、详情都变成可展开面板，用户需要时才出现。</p>
+</div>

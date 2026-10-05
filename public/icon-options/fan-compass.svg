@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 64 64" role="img" aria-label="饭字罗盘图标">
+  <defs>
+    <linearGradient id="bg" x1="8" y1="6" x2="58" y2="62" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2f2923"/>
+      <stop offset="1" stop-color="#17130f"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="18" y1="13" x2="46" y2="51" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fffaf1"/>
+      <stop offset="1" stop-color="#f0e3d0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="3" stdDeviation="2.4" flood-color="#1d1914" flood-opacity=".3"/>
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <path d="M9 15.5h46M9 31.5h46M9 47.5h46M16.5 8v48M32.5 8v48M48.5 8v48" stroke="#fffaf1" stroke-opacity=".055" stroke-width="1"/>
+  <circle cx="32" cy="32" r="23" fill="#1d1914" stroke="#9c7824" stroke-width="1.8" filter="url(#shadow)"/>
+  <circle cx="32" cy="32" r="18.6" fill="url(#paper)" stroke="#dfd1bd" stroke-width="1"/>
+  <path d="M32 6.8l3.7 17.7L32 28l-3.7-3.5L32 6.8z" fill="#c94f38"/>
+  <path d="M32 57.2l-3.2-16 3.2-3.2 3.2 3.2-3.2 16z" fill="#4c6244"/>
+  <path d="M32 10.5v5.2M32 48.3v5.2M10.5 32h5.2M48.3 32h5.2" stroke="#9c7824" stroke-linecap="round" stroke-width="2"/>
+  <path d="M17.5 17.5l3.3 3.3M43.2 43.2l3.3 3.3M46.5 17.5l-3.3 3.3M20.8 43.2l-3.3 3.3" stroke="#9c7824" stroke-linecap="round" stroke-opacity=".55" stroke-width="1.4"/>
+  <text x="32" y="39.8" fill="#1d1914" font-family="'Noto Serif SC','Source Han Serif SC','Songti SC',serif" font-size="23" font-weight="700" text-anchor="middle">饭</text>
+  <circle cx="32" cy="32" r="3.5" fill="#c94f38" stroke="#fffaf1" stroke-width="1.2"/>
+</svg>
