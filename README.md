@@ -1,37 +1,40 @@
-# 干饭地图指北
+# GanfanMap
 
-一个本地优先的私人探店网页地图。第一版只做 Web，使用 React、Vite、TypeScript、Dexie、Zod、Zustand、Radix UI、lucide-react 和 GSAP。
+<p align="center">
+  <img src="public/brand-icon.svg" alt="GanfanMap" width="112" height="112" />
+</p>
 
-## 运行
+<p align="center">本地优先的私人探店地图</p>
+
+<p align="center">
+  <a href="https://github.com/b1mango/GanfanMap"><img src="https://img.shields.io/badge/status-development-2ea043" alt="development" /></a>
+  <img src="https://img.shields.io/badge/platform-Web-1f6feb" alt="Web" />
+  <a href="#license"><img src="https://img.shields.io/badge/license-pending-f5c542" alt="license pending" /></a>
+</p>
+
+## 功能
+
+- 记录店铺状态、类型、标签、地址、坐标、人均和笔记
+- 记录消费日期、菜品、金额、备注与照片
+- 口味、环境、服务、性价比评分及综合分计算
+- 按状态、类型、标签、综合分、人均筛选和排序
+- 配置高德 Key 后使用真实地图、Marker 和 POI 搜索选点
+- IndexedDB 本地保存全部数据，支持 JSON 备份导入导出
+
+## 安装
+
+需要 Node.js 与 pnpm。克隆仓库并安装依赖：
 
 ```bash
-pnpm install
+git clone https://github.com/b1mango/GanfanMap.git
+cd GanfanMap
+pnpm install --frozen-lockfile
 pnpm dev
 ```
 
-如需启用高德搜索选点，复制 `.env.example` 为 `.env.local` 后填入：
+开发服务默认运行于 `http://127.0.0.1:5174`。启用高德地图和搜索时，复制 `.env.example` 为 `.env.local`，填写 `VITE_AMAP_KEY` 与 `VITE_AMAP_SECURITY_JS_CODE` 后重启开发服务。
 
-```text
-VITE_AMAP_KEY=
-VITE_AMAP_SECURITY_JS_CODE=
-```
-
-当前开发服务默认可用：
-
-```text
-http://127.0.0.1:5174
-```
-
-## 当前能力
-
-- 店铺本地记录：已探店 / 想去、主类型、多标签、地址、坐标、人均、笔记。
-- 评分模型：口味、环境、服务、性价比 1-10 分，加权得到综合分。
-- 消费记录：日期、菜品/内容、金额、备注、照片压缩后保存到 IndexedDB。
-- 筛选排序：状态、主类型、标签、综合分、人均、排序。
-- 地图体验：无高德 Key 时提示配置；配置 Key 后使用高德 JS API 2.0 真实底图、真实 marker 和 POI 搜索选点。
-- 数据安全：IndexedDB 本地保存，支持 JSON 备份导入导出。
-
-## 验证
+## 开发
 
 ```bash
 pnpm lint
@@ -39,8 +42,6 @@ pnpm test
 pnpm build
 ```
 
-## 边界
+## License
 
-- 首版不做登录、云同步、公开分享页和实时营业状态。
-- 首版以桌面管理体验为主，手机端保证基础浏览、筛选和详情可用。
-- 高德真实地图需要配置 `VITE_AMAP_KEY` 并重启开发服务后加载；未配置时会提示配置 Key。
+仓库当前未附 `LICENSE` 文件，许可证待确认。请在补充许可证文本后更新此处及徽章。
